@@ -7,5 +7,6 @@ public class AccountNode implements PortfolioManagerElement {
     @Override
     public void accept(PortfolioManagerVisitor visitor) {
 
+        visitor.visitAccount(this);
     }
 }
