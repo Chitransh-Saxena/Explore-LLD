@@ -36,4 +36,12 @@ public class AssetNode implements PortfolioManagerElement {
 
     public AssetNode() {
     }
+
+    @Override
+    public String toString() {
+        return "AssetNode{" +
+                "value=" + value +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

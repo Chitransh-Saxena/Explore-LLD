@@ -8,6 +8,16 @@ import java.util.List;
 
 public class PortfolioNode implements PortfolioManagerElement {
 
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     private List<PortfolioManagerElement> accounts = new ArrayList<>();
     @Override
     public void accept(PortfolioManagerVisitor visitor) {
@@ -16,5 +26,9 @@ public class PortfolioNode implements PortfolioManagerElement {
 
     public List<PortfolioManagerElement> getAccounts() {
         return accounts;
+    }
+
+    public void setAccounts(List<PortfolioManagerElement> accounts) {
+        this.accounts = accounts;
     }
 }
